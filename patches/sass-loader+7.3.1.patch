@@ -1,0 +1,25 @@
+diff --git a/node_modules/sass-loader/dist/index.js b/node_modules/sass-loader/dist/index.js
+index ca36e3b..93c8639 100644
+--- a/node_modules/sass-loader/dist/index.js
++++ b/node_modules/sass-loader/dist/index.js
+@@ -180,17 +180,17 @@ function getRenderFuncFromSassImpl(module) {
+ }
+ 
+ function getDefaultSassImpl() {
+-  let sassImplPkg = 'node-sass';
++  let sassImplPkg = 'dart-sass';
+ 
+   try {
+-    require.resolve('node-sass');
++    require.resolve('dart-sass');
+   } catch (error) {
+     try {
+       require.resolve('sass');
+ 
+       sassImplPkg = 'sass';
+     } catch (ignoreError) {
+-      sassImplPkg = 'node-sass';
++      sassImplPkg = 'dart-sass';
+     }
+   } // eslint-disable-next-line import/no-dynamic-require, global-require
+ 

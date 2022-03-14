@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import ReactCrop from 'react-image-crop'
 
 import {
     Row,
@@ -71,7 +70,7 @@ export class ExampleProvider extends React.Component {
         return (
             <Row>
                 <Col lg={ 6 }>
-                    <ReactCrop
+                    {/* <ReactCrop
                         className="d-block"
                         crop={ position }
                         src={ src }
@@ -79,7 +78,7 @@ export class ExampleProvider extends React.Component {
                         onComplete={ (croppedPosition) => { this.setState({ croppedPosition }) } }
                         ref={ this.cropRef }
                         { ...cropProps }
-                    />
+                    /> */}
                 </Col>
                 <Col lg={ 6 } >
                 {
